@@ -1,0 +1,41 @@
+/* Main selector with width limit */
+main {
+    width: 90%; /* Limit width to 90% of the container */
+    margin: 0 auto; /* Center the content */
+  }
+  
+  /* Aside element selector with required properties */
+  aside {
+    width: 300px; /* Set a specific width */
+    margin: 20px; /* Add margin for spacing */
+    border: 1px solid #ccc; /* Add a border */
+    padding: 10px; /* Add padding for content spacing */
+    background-color: #f0f0f0; /* Set background color */
+    color: #333; /* Set text color */
+  }
+  
+  /* Image inside aside with specific width and aspect ratio */
+  aside img {
+    width: 200px; /* Set width to 200px */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* More exclusive selector for profile img inside main */
+  main img {
+    width: 150px; /* Set width to 150px */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid black; /* Add a border */
+    padding: 2px; /* Add padding */
+    box-shadow: 0 0 30px gray; /* Add box shadow */
+  }
+  
+  /* Paragraph padding change */
+  p {
+    padding: 0; /* Set padding to 0 */
+  }
+  
+  /* Footer styles */
+  footer {
+    margin-top: 20px; /* Add top margin */
+    border-top: 2px solid #333; /* Add top border */
+    text-align: center; /* Center the text */
