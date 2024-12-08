@@ -1,18 +1,29 @@
 /* :root for CSS Variables */
 :root {
-  --primary-color: #1b4d3e;
-  --secondary-color: #81a69b;
-  --accent1-color: #f4a261;
-  --accent2-color: #e76f51;
-  --text-color: #333333;
+  --primary-color: #1b4d3e;      /* Deep green */
+  --secondary-color: #81a69b;   /* Light green */
+  --accent1-color: #f4a261;     /* Orange */
+  --accent2-color: #e76f51;     /* Red-orange */
+  --text-color: #333333;        /* Dark gray */
+  --background-color: #ffffff;  /* White */
 }
 
 /* General Reset */
-body, h1, h2, p, ul, li {
+body, h1, h2, h3, p, ul, li, figure, figcaption, form, label {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
   color: var(--text-color);
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Body Styling */
@@ -53,8 +64,13 @@ header nav ul li a {
   font-weight: bold;
 }
 
-header nav ul li a:hover {
+header nav ul li a:hover, header nav ul li a.active {
   color: var(--accent1-color);
+}
+
+/* Main Content Styling */
+main {
+  margin: 2rem 0;
 }
 
 /* Hero Section */
@@ -83,10 +99,11 @@ header nav ul li a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   padding: 1rem;
   border-radius: 8px;
   width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .client-img {
@@ -98,7 +115,7 @@ header nav ul li a:hover {
 /* History Section */
 .history {
   padding: 2rem;
-  background-color: white;
+  background-color: var(--background-color);
   border-radius: 8px;
   margin: 2rem 0;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -141,6 +158,92 @@ header nav ul li a:hover {
   color: var(--text-color);
 }
 
+/* Contact Page: Contact Information */
+.contact-info {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 2rem 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info address {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info iframe.map {
+  width: 100%;
+  height: 300px;
+  border: 0;
+  border-radius: 8px;
+}
+
+/* Contact Page: Team Section */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.team-grid img {
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-grid figcaption {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+/* Contact Page: Form Section */
+.contact-form {
+  margin-top: 2rem;
+  padding: 2rem;
+  background-color: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form fieldset {
+  margin-bottom: 1.5rem;
+}
+
+.contact-form button {
+  background-color: var(--accent1-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: var(--accent2-color);
+}
+
 /* Footer */
 footer {
   display: flex;
@@ -157,5 +260,20 @@ footer .social {
 }
 
 footer .social img {
-  width: 30px;
+  width: 10px; /* Smaller icon size */
+  height: auto; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+footer .social a:hover img {
+  transform: scale(1.1); /* Slight enlargement on hover */
+}
+
+footer a {
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: var(--accent1-color);
 }
