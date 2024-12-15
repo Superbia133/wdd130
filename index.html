@@ -1,42 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edward Griffeth | WDD 130</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edward Griffeth | WDD 130</title>
+  
+  <!-- New Meta Tags -->
+  <meta name="description" content="Edward Griffeth's course home page for WDD 130, showcasing web development skills, including HTML and CSS techniques.">
+  <meta name="author" content="Edward Griffeth">
 
-    <!-- Meta tags for SEO and author information -->
-    <meta name="description" content="Edward Griffeth's portfolio for WDD 130. Web development and design, Dungeons & Dragons, Star Wars, and more.">
-    <meta name="author" content="Edward Griffeth">
-    
-    <!-- Link to external stylesheet -->
-    <link rel="stylesheet" href="styles/styles.css">
+  <style>
+    /* General Reset */
+    body, h1, p, nav, footer, ul, li {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f4f4f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-color: #006699;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+    header nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Main Section */
+    main {
+      padding: 20px;
+      text-align: center;
+      max-width: 800px; /* Limiting width */
+      margin: 0 auto;
+    }
+    main h1 {
+      font-size: 2.5em;
+      margin-bottom: 15px;
+      color: #006699;
+    }
+    main img {
+      border-radius: 50%;
+      width: 150px; /* Modified size */
+      height: auto;
+      margin: 20px 0;
+    }
+    main p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      padding: 0; /* Set padding to 0 */
+    }
+
+    /* Aside Section */
+    aside {
+      width: 300px; /* Set aside width */
+      margin: 20px auto; /* Centered with margin */
+      border: 2px solid #006699;
+      padding: 15px;
+      background-color: #e0f7fa; /* Light background color */
+      color: #006699; /* Text color */
+    }
+    aside img {
+      width: 200px;
+      height: auto;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #006699;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 30px;
+      border-top: 2px solid #fff; /* Top border */
+    }
+    footer p {
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-            <a href="rafting.html">Rafting Website</a>
-        </nav>
-    </header>
+  <!-- Header Section -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="wwr/">Rafting Website</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <main>
-        <h1>Edward Griffeth | WDD 130</h1>
-        <img src="images/profile.png" alt="Edward Griffeth's profile photo" width="200">
-        <p>Hello! My name is Edward Griffeth. I'm passionate about web development and design, and I love exploring the creative worlds of Dungeons & Dragons, Lord of the Rings, and Star Wars. When I'm not coding, you’ll often find me diving into these epic universes, whether it's playing a D&D campaign, re-reading Tolkien’s works, or enjoying the latest Star Wars content. I’m from California, where the weather is as diverse as my hobbies, and I’m always looking for new adventures—both in the real world and in the worlds of fantasy!</p>
-    </main>
+  <!-- Main Content -->
+  <main>
+    <h1>Edward Griffeth | WDD 130</h1>
+    <img src="images/profile.png" alt="Edward Griffeth">
+    <p>Hello! My name is Edward Griffeth. I am passionate about web development, design, and adventurous hobbies like rafting. I hail from California, and I love bringing creativity to every project I work on.</p>
+  </main>
 
-    <!-- Adding aside for state or country information -->
-    <aside>
-        <h2>California, USA</h2>
-        <img src="images/california.jpg" alt="California landscape" width="200">
-        <p>California is known for its stunning coastlines, vibrant cities, and diverse landscapes. It is quite a nice place when it isn't in a drought or on fire.</p>
-    </aside>
+  <!-- Aside Section -->
+  <aside>
+    <h2>California</h2>
+    <img src="images/california.jpg" alt="California image">
+    <p>California is known for its beautiful coastlines, diverse culture, and vibrant cities like San Francisco and Los Angeles. It's a state full of opportunities for adventure and creativity.</p>
+  </aside>
 
-    <footer>
-        <p>&copy; 2024 Edward Griffeth | California, USA</p>
-    </footer>
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Dry Oar Rafting | Designed by Edward Griffeth</p>
+  </footer>
 </body>
 </html>
